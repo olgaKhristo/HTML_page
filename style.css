@@ -1,0 +1,100 @@
+body {
+    background-color: #d3f1d3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #b9ebb9; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu {
+    margin-right: 50px;
+    display: flex; /* Display the menu items in a row */
+    align-items: center; /* Vertically center the items */
+}
+.icon-envelope {
+    margin-right: 10px;
+}
+
+.icon-heart {
+    margin-right: 10px;
+}
+
+.company-name {
+    text-align: center;
+    color: green;
+    margin-top: 40px;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden; /* Hide overflow to ensure images are not visible outside the carousel */
+}
+
+.carousel img {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 0 10px;
+    opacity: 0; /* Initially hide all images */
+    position: absolute;
+    animation: slide 15s infinite; /* Apply the slide animation with a 15s duration and infinite loop */
+}
+
+.carousel img:nth-child(1) {
+    animation-delay: 0s; /* Delay the first image by 0s */
+}
+
+.carousel img:nth-child(2) {
+    animation-delay: 5s; /* Delay the second image by 5s */
+}
+
+.carousel img:nth-child(3) {
+    animation-delay: 10s; /* Delay the third image by 10s */
+}
+
+@keyframes slide {
+    0%, 100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.carousel img {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 0 10px;
+} */
+
+.placeholder-text {
+    text-align: center;
+    margin: 150px;
+}
